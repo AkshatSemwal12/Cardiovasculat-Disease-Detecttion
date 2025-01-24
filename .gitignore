@@ -1,0 +1,6 @@
+node_modules
+myenv
+package-lock.json
+package.json
+requirements.txt
+frontend

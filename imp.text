@@ -1,0 +1,32 @@
+{
+  "name": "John Doe",
+  "age": 45,
+  "gender": "Male",
+  "education": 4, // Education level (e.g., 0: None, 1: High School, 2: Bachelor's, 3: Master's, 4: Doctorate)
+  "BMI": 27.5,
+  "cholesterol": 210, // Total cholesterol level
+  "systolicBP": 130,  // Systolic blood pressure
+  "diastolicBP": 85,  // Diastolic blood pressure
+  "smoking": true,     // 0 for non-smoker, 1 for smoker
+  "cigsPerDay": 10,   // Number of cigarettes smoked per day
+  "BPMeds": false,     // 0 for not on medication, 1 for on medication
+  "prevalentStroke": false, // 0 for no history of stroke, 1 for history of stroke
+  "prevalentHyp": true, // 0 for no hypertension, 1 for hypertension history
+  "diabetes": false,    // 0 for no diabetes, 1 for diabetes
+  "heartRate": 75,      // Heart rate in beats per minute
+  "glucose": 90         // Glucose level
+}
+
+
+Project Flow- Taking input in frontend- App.js
+Text- Represent sequence of characters in HTML Ex- "male" can be "1" or "0" in text form
+Number- Represents numerical values. Example: age should be a number like 25.
+
+We convert to specific input to boolean as necessary "1" for true and "0" for false.
+
+still an issue is going between the input values of backend and py script as i am getting no response
+
+Based on the details you've provided, it looks like you're running into two primary issues with your Node.js backend and Python script integration:
+
+No Response from Python Script: Your Python script isn't returning a response when called from your Node.js server.
+CORS and Preflight Requests: You're seeing a 204 No Content response for the OPTIONS request, which is expected during preflight checks when using CORS, but this does not help with the actual data processing.
